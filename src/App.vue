@@ -1,12 +1,10 @@
 <template>
   <div id="app">
-
+    <router-view />
   </div>
 </template>
 
 <script>
-
-
   export default {
     name: 'App',
     components: {
@@ -16,5 +14,5 @@
 </script>
 
 <style>
-  @import url('./style/base.css');
+  @import url('assets/css/base.css');
 </style>
