@@ -73,7 +73,7 @@ export default {
       // })
       // 封装
       getLogin(this.loginForm.username, this.loginForm.password).then(res => {
-        console.log(res)
+        // console.log(res)
         // 判断状态码是否为200
         if(res.data.meta.status !== 200) return this.$message.error("Failed user login")
         this.$message.success("Login successfully")

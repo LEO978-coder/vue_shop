@@ -5,12 +5,16 @@ export function request(config) {
   const instance = axios.create({
     baseURL: 'http://127.0.0.1:8888/api/private/v1/',
     timeout: 5000,
+    params: config.params,
     method: 'get' || config.method
   })
 
   // 2. axios的拦截器
   // 2.1 请求拦截
   instance.interceptors.request.use(config => {
+    // 为请求头添加token 验证的 Authorization 字段
+    config.headers.Authorization = window.localStorage.getItem('token')
+    // console.log(config)
     return config
   }, err => {
     console.log(err)
