@@ -55,3 +55,19 @@ export function getDeleteUser(id) {
     method: 'delete'
   })
 }
+
+export function getSetRoleList() {
+  return request({
+    url: 'roles'
+  })
+}
+
+export function getSetNewRole(userId, roleId) {
+  return request({
+    url: `users/${userId}/role`,
+    method: 'put',
+    params: {
+      roleId
+    }
+  })
+}

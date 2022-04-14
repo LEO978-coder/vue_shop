@@ -29,7 +29,12 @@ import {Form,
         Pagination,
         Dialog,
         Popconfirm,
-        MessageBox } from 'element-ui'
+        MessageBox,
+        Tag,
+        Empty,
+        Tree,
+        Select,
+        Option } from 'element-ui'
 
 Vue.use(Form)
 Vue.use(FormItem)
@@ -55,6 +60,11 @@ Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
 Vue.use(Popconfirm)
+Vue.use(Tag)
+Vue.use(Empty)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
 
