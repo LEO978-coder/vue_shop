@@ -64,3 +64,11 @@ a {
 .el-pagination {
   margin-top: 15px;
 }
+
+.el-cascader {
+  width: 100%;
+}
+
+.el-cascader-panel {
+  height: 350px;
+}

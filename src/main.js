@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import ZkTable from 'vue-table-with-tree-grid'
+
+Vue.component(ZkTable.name, ZkTable)
 
 Vue.config.productionTip = false
 
@@ -34,7 +37,8 @@ import {Form,
         Empty,
         Tree,
         Select,
-        Option } from 'element-ui'
+        Option,
+        Cascader } from 'element-ui'
 
 Vue.use(Form)
 Vue.use(FormItem)
@@ -65,6 +69,7 @@ Vue.use(Empty)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
 
