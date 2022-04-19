@@ -72,3 +72,11 @@ a {
 .el-cascader-panel {
   height: 350px;
 }
+
+.el-steps {
+  margin: 15px 0;
+}
+
+.el-step__title {
+  font-size: 14px;
+}
